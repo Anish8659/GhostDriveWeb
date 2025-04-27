@@ -1,0 +1,54 @@
+/* faq.css - Styles for FAQ page accordions and panels */
+
+/* Ensure body uses the same background and font as main site */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    margin-top: 60px; /* offset for topnav */
+    margin-bottom: 489px; /* offset for bottomNav */
+}
+
+/* Accordion button styling */
+.accordion {
+    background-color: #313131;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    margin-bottom: 10px;
+}
+
+.accordion:hover,
+.accordion.active {
+    background-color: #515151;
+}
+
+/* Panel (dropdown content) styling */
+.panel {
+    background-color: #ffffff;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 0 18px;
+    border-left: 3px solid #831f1f;
+    margin-bottom: 20px;
+}
+
+.panel p {
+    padding: 12px 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333333;
+}
+
+/* Maintain topnav and bottomNav offsets */
+main {
+    padding: 80px 20px 200px;
+}
